@@ -1,0 +1,15 @@
+enum (Track) {
+ 
+   symbol (AI & Data Science)
+   symbol (Career)
+   symbol (Gaming)
+   symbol (Containers)
+   symbol (Javascript)
+   symbol (Language)
+   symbol (Mobile & IoT)
+   symbol (Practices)
+   symbol (Security)
+   symbol (Keynote)
+   symbol (Cloud & Containers)
+  
+}

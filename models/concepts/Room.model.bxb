@@ -1,0 +1,3 @@
+integer (Room) {
+  description (Room number)
+}

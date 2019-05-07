@@ -1,0 +1,50 @@
+layout-macro-def (sessions) {
+  params {
+    param (session) {
+      type (Session)
+      min (Required) max (Many)
+    }
+  }
+  
+  content {
+    section {
+      content {
+       
+        for-each (session) {
+          as (s) {
+            thumbnail-card {
+              on-click {
+                intent {
+                  goal: Session
+                  value: $expr(s)
+                }
+              }
+              image-url("#{value(s.image)}")
+              title-area {
+                slot1 {
+                  text {
+                    value("#{value(s.speaker)}")
+                  }
+                }
+                slot2 {
+                  paragraph {
+                    value ("Session:  #{value(s.title)}")
+                    style(Detail_M)
+                  }
+                }
+                slot3 {
+                  paragraph {
+                    value ("#{value(s.time)} -  Room #{value(s.room)}")
+                  }
+                }
+              }
+            }
+          }
+        }
+       
+       
+        
+      }
+    }
+  }
+}

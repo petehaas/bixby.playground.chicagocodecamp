@@ -1,0 +1,5 @@
+train (t-30kwurkwbeupo5w1g95y9e5gz) {
+  utterance ("[g:Session] list all level (200)[v:Level] session in (the morning)[v:time.DateTimeExpression]")
+  plan (Y2BhkE0uLSpL1UvOyExOTM9Pzk9JTU7MLdALTi0uzszPY1DELu2WmZcCUyKNXYlPallqDoN0WWaZXklmbqqeS2JJagiQ4VpRUATVyczAyMAEJBmANAhCAIgPFgUA)
+  last-modified (1557059095873)
+}

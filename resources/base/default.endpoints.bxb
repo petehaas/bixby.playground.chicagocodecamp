@@ -1,0 +1,11 @@
+endpoints {
+  action-endpoints {
+    action-endpoint (FindSession) {
+      accepted-inputs (searchLevel,searchCriteria,searchTime)
+      local-endpoint (FindSession.js)
+    }
+    action-endpoint (ConstructSessionDate) {
+      local-endpoint (ConstructSessionDate.js)
+    }
+ }
+}

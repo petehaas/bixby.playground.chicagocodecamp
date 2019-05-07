@@ -1,0 +1,22 @@
+capsule {
+  id (playground.chicagocodecamp)
+  version (0.1.0)
+  format (3)
+  targets {
+    target (bixby-mobile-en-US)
+  }
+  
+  capsule-imports {
+     
+     import (viv.time) {
+      version (2.85.1)
+      as (time)
+    }
+    
+  }
+  runtime-flags {
+    concepts-inherit-super-type-features
+    support-halt-effect-in-computed-inputs
+    modern-prompt-rejection
+  }
+}

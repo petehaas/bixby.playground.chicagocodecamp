@@ -1,0 +1,5 @@
+train (t-9qpmlz0gpm71nu34vze6mu044) {
+  utterance ("[g:Session] show sessions (from noon until 3PM)[v:time.DateTimeExpression]")
+  plan (Y2BmkE0uLSpL1UvOyExOTM9Pzk9JTU7MLdALTi0uzszPY1DELu2WmZcCUyJdllmmV5KZm6rnkliSGgJkuFYUFEElmRgYgZgBSDIygAATBAMA)
+  last-modified (1556999082032)
+}

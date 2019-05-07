@@ -1,0 +1,53 @@
+structure (Session) {
+  description (A session at the conference)
+ 
+  property (time){
+    type (SessionTime)
+    min (Required) max (One)
+  }
+  
+  property (track){
+    type (Track)
+    min (Required) max (One)
+  }
+  
+  property (room){
+    type (Room)
+    min (Required) max (One)
+  }
+  
+  property (topic) {
+    type (Topic)
+    min (Required) max (One)
+  }
+  
+  property (speaker) {
+    type (SpeakerName)
+    min (Required) max (One)
+  }
+  
+  property (image) {
+    type (SpeakerImage)
+    min (Required) max (One)
+  }
+  
+  property (title) {
+    type (Title)
+    min (Required) max (One)
+  }
+  
+  property (tags) {
+    type (Tag)
+    min (Required) max (Many)
+  }
+  
+  property (level) {
+    type (Level)
+    min (Required) max (One)
+  }
+  
+  property (description) {
+    type (Description)
+    min (Required) max (One)
+  }
+}

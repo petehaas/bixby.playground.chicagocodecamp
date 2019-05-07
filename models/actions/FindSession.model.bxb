@@ -1,0 +1,38 @@
+action (FindSession) {
+  type(Search)
+  description (find a session using some search criteria)
+  collect {
+
+    input (searchLevel) {
+      type (Level)
+      min (Optional) max (One)
+    }
+     input (searchCriteria) {
+      type (SearchCriteria)
+      min (Optional) max (One)
+    }
+    input (searchTime) {
+      type (time.DateTimeExpression)
+      min (Optional) max (One)
+    
+      default-select {
+        with-rule {
+          select-first {
+            sort-key (MIN) {
+              binding (dateTime.date.day)
+            }
+          }
+        }
+      }
+        
+      }
+    }
+  
+  output (Session) {
+    on-empty {
+      if(exists(searchTime)) {
+        drop(searchTime)
+      }
+    }
+  }
+}

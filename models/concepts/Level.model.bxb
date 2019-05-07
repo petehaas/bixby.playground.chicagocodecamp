@@ -1,0 +1,6 @@
+integer (Level) {
+  description (level 100, 200, etc)
+  features {
+    transient
+  }
+}

@@ -1,0 +1,4 @@
+action (ConstructSessionDate) {
+  type (Constructor)
+  output (time.Date)
+}

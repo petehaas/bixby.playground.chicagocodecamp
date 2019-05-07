@@ -1,0 +1,97 @@
+layout-macro-def (profile) {
+  params {
+    param (session) {
+      type (Session)
+      min (Required) max (One)
+    }
+  }
+  
+  content {
+    section {
+      content {
+        // image card
+        image-card {
+          image-url ("#{value(session.image)}")
+          text-position (Overlay)
+          title-area {
+            slot2 {
+              single-line {
+                text {
+                  value ("#{value(session.speaker)}")
+                }
+              }
+            }
+            
+            slot3 {
+              single-line {
+                text {
+                  value ("Track:  #{value(session.track)}")
+                  style(Detail_M)
+                }
+              }
+            }
+          } 
+          
+        }
+       
+        // Details
+        divider
+       
+        title-area {
+          halign (Center)
+          slot2 {
+            paragraph {
+              value("#{value(session.title)}")
+              style(Title_M)
+            }
+          }
+        }
+        
+        paragraph {
+          value ("#{value(session.description)}")
+        }
+        divider
+        cell-area {
+          
+          slot2 {
+            content {
+             
+              primary {
+                template ("Time:  #{value(session.time)}")
+              }
+              secondary {
+                template ("Level:  #{value(session.level)}")
+              }
+            }
+          }
+          slot3 {
+            label {
+              value("Room:  #{value(session.room)}")
+            }
+          }
+        }
+        
+        divider
+        hbox{
+          content {
+            for-each (session.tags) {
+              as (tag) {
+                vbox {
+                  content {
+                    text {
+                      value("#{value(tag)}")
+                      style(Detail_M)
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        divider
+        
+        
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+description {
+  displayName (Chicago Code Camp)
+  companyName (Chicago Code Camp)
+  iconUrl (/images/logo.png)
+  description ("Over 10 years creating a community driven event for developers of all levels")
+  websiteUrl (https://chicagocodecamp.com/)
+  termsUrl (https://www.chicagocodecamp.com/Home/CodeOfConduct/)
+  search-keywords {
+    keyword (coding)
+    keyword (chicago code camp)
+    keyword (developer events)
+  }
+}

@@ -1,0 +1,5 @@
+train (t-wukezw6faxrzhcxpz91h0cyzq) {
+  utterance ("[g:Session] list from (9AM until noon)[v:time.DateTimeExpression] just talking about (Kotlin)[v:SearchCriteria]")
+  plan (Y2BhkE0uLSpL1UvOyExOTM9Pzk9JTU7MLdALTi0uzszPY1DELu2WmZcCU6KCy4TEouQM56LMktSizEQG6bLMMr2SzNxUPZfEktQQIMO1oqAIagQzAyMDE5BkANIgCAEgPlgUAA==)
+  last-modified (1557060968982)
+}

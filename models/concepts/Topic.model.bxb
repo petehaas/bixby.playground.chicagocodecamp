@@ -1,0 +1,12 @@
+enum (Topic) {
+  description (session topics)
+  symbol (web)
+  symbol (mobile)
+  symbol (cloud)
+  symbol (management)
+  symbol (other)
+  symbol (security)
+  symbol (language)
+  symbol (practices)
+  symbol (javascript)
+}

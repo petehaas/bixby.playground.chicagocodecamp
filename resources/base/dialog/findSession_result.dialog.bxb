@@ -1,0 +1,21 @@
+dialog (Result) {
+  match: Session(result) {
+    from-output: FindSession(action)
+  }
+  
+  if (size(result) == 1) {
+     template ("#{value(result.speaker)} is speaking in room #{value(result.room)} at #{value(result.time)} ")
+  }
+  else-if (exists(action.searchLevel)) {
+    template ("Searched level #{value(action.searchLevel)} sessions")
+  }
+   else-if (exists(action.searchCriteria)) {
+     template ("Searched sessions matching #{value(action.searchCriteria)}")
+   }
+   else-if (exists(action.searchTime)) {
+     template ("Searched sessions matching #{value(action.searchTime)}")
+   }
+  else {
+    template ("I found #{size(result)} Sessions")
+  }
+}

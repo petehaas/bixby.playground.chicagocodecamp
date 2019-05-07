@@ -1,0 +1,5 @@
+train (t-qfzs0d19zedsy7yi0866fcpy5) {
+  utterance ("[g:FindSession] show me talks about (Kubernetes)[v:SearchCriteria]")
+  plan (Y2BmkE0uLSpL1UvOyExOTM9Pzk9JTU7MLdALTi0uzszPY1DELu2WmZcCU6KCy4TEouQM56LMktSizEQGJgZGIGYAkowMIADlAwA=)
+  last-modified (1556971939854)
+}

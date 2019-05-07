@@ -1,0 +1,49 @@
+result-view {
+  match {
+    Session(this) {
+      from-output: FindSession
+    }
+  }
+  
+  render {
+    if (size(this) == 1) {
+      
+       layout-macro (profile) {
+        param (session) {
+          expression (this)
+      }
+    }
+      
+    }
+    
+      else {
+      
+        layout-macro (sessions) {
+          param (session) {
+            expression (this)
+          }
+        }  
+    }
+   
+    
+  }
+  conversation-drivers {
+    if (size(this) == 1) {
+      
+      conversation-driver {
+          template (All sessions)
+        }
+      
+      conversation-driver {
+          template (Level 100)
+        }
+      
+      conversation-driver {
+          template (Level 200)
+        }
+      
+      
+    }
+    
+  }
+}

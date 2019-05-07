@@ -1,0 +1,7 @@
+structure (SearchTime) {
+ role-of   (time.DateTimeExpression)
+  
+  features {
+    transient
+  }
+}

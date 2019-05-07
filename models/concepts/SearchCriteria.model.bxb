@@ -1,0 +1,6 @@
+text (SearchCriteria) {
+  description (Use this value to filter the title and description by search words)
+  features {
+    transient
+  }
+}
